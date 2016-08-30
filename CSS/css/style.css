@@ -1,7 +1,44 @@
 body {
-	color: #000000;
+	/*color: #000000;*/
 	font-family: 'Indie Flower', cursive;
+	/*background-image: url(Images/me.jpg);*/
 }
+
+#firstPage {
+	 background-image: url('../../me.jpg');
+	opacity: 0.9;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ /* box-shadow: 0 0 8px 8px white inset;*/
+}
+
+#title {
+	margin-top: 5%;
+	margin-left: -20%;
+	    text-shadow: 3px 3px black;
+    color: white;
+}
+
+#subtitle {
+	    text-shadow: 3px 3px black;
+    color: white;
+    margin-right: -20%;
+}
+
+#space {
+	height: 50%;
+}
+
+/*#me {
+	position: fixed;
+  top: 0; 
+  left: 0; 
+  z-index: -10;
+  min-width: 100%;
+  min-height: 100%;
+}*/
 
 h1 {
 	font-size: 80px;
@@ -99,24 +136,24 @@ h3 {
 
 #gurlcode {
 	width: 100%;
-	margin-top: 5%;
+	/*margin-top: 5%;*/
 }
 
 #shell {
 	width: 100%;
-	margin-top: 5%;
+	/*margin-top: 5%;*/
 }
 
 #cache {
 	width: 60%;
-	padding-top: 15%;
+	/*padding-top: 15%;*/
 	margin: auto;
 	display: block;
 }
 
 #LuminAID {
 	width: 95%;
-	padding-top: 10%;
+	/*padding-top: 10%;*/
 	height: 77%;
 	display: block;
 	margin: auto;
@@ -124,14 +161,14 @@ h3 {
 
 #Reversi {
 	width: 60%;
-	padding-top: 10%;
+	/*padding-top: 10%;*/
 	display: block;
 	margin: auto;
 }
 
 #rayTracer {
 	width: 60%;
-	padding-top: 10%;
+	/*padding-top: 10%;*/
 	display: block;
 	margin: auto;
 }
@@ -159,11 +196,45 @@ h3 {
 #myModal {
 	position: relative;
 	z-index: 100;
-	css3: false;
+	css3: true;
 }
 
 .modal, .modal-body, .modal-dialog, .modal-header, .fade, .modal-footer {
 	position: relative;
-	z-index: 100;
-	css3: false;
+	z-index: 90;
+	css3: true;
+}
+
+.modalbtn {
+	width: 100%;
+	height: 90%;
+}
+
+.btn-primary {
+	color: #FFFFFF;
+}
+
+.projects {
+	padding-top: 30%;
+	font-size: 60px;
+}
+
+.projectsmd {
+	padding-top: 35%;
+	font-size: 50px;
+}
+
+.projectssm {
+	padding-top: 30%;
+	font-size: 45px;
+}
+
+.projectsxs {
+	padding-top: 35%;
+	font-size: 35px;
+}
+
+.modaltxt {
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
 }

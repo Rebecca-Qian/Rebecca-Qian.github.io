@@ -13,27 +13,29 @@
     <link rel="stylesheet" href="CSS/css/bootstrap-theme.min.css">
    
     <link href="CSS/css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
      <link href="JS/jquery.fullPage.css" type="text/css" rel="stylesheet">
 
   </head>
   <body>
     <div class="container-fluid">
     <div id="fullpage">
-      <div class="section active">
+      <div id="firstPage" class="section active">
         <div class="row">
-          <h1 class="text-center">Hi, I'm Rebecca Qian</h1>
+          <h1 id="title" class="text-center"><b>Hi, I'm Rebecca Qian</b></h1>
         </div>
-        <div class="row">
-          <img id="me" src="Images/headshot1.jpg" />
+
+        <div id="space" class="row">
         </div>
+
         <div class="box row">
-          <h3 class="text-center">I like code, startups &amp avocados</h3>
+          <h3 id="subtitle" class="text-center">I like code, startups &amp avocados</h3>
         </div>
       </div>
       <div class="section">
         <div class="intro" class="row">
-          <h3 class="text-center">Originally from Beijing, I'm currently a <b class="emphasize">Computer Science</b> student at the <b class="emphasize">University of Chicago</b>.</h3>
+          <h3 class="text-center">I'm a 20 year-old <b class="emphasize">Computer Science</b> student at the <b class="emphasize">University of Chicago</b>.</h3>
         </div>
         <div class="intro row">
         <br />
@@ -46,7 +48,7 @@
     </div>
     <div class="section">
       <div class="row">
-        <h3 class="text-center"> Technical Projects </h3>
+        <h3 class="text-center"><u> Technical Projects</u></h3>
       </div>
 <div class="row">
 <!-- Button HTML (to Trigger Modal) -->
@@ -58,15 +60,16 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">GURL</h4>
+                <h4 class="modal-title modaltxt">GURL</h4>
             </div>
             <div class="modal-body">
-                <p>gURL is a customizable, imaginative resource generator to inspire girls about technology.</p>
+                <p class="modaltxt">gURL is a customizable, imaginative resource generator to inspire girls about technology. gURL was named a winner at the 2016 CapitalOne Women in Tech Demo Days, and will soon be featured in Women at Forbes.</p>
+                <p class="modaltxt">Technical: Javascript, Bootstrap, JQuery, HTML/CSS</p> 
                 <img id="gurlcode" src="Images/GurlCode.png" />
-                <p class="text-warning"><small>Link to Github</small></p>
+                <a href="https://github.com/gurlcode/gurlcode.github.io" target="_blank"><p class="modaltxt">See the code</p></a>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal"><p class="modaltxt">Close</p></button>
             </div>
         </div>
     </div>
@@ -77,81 +80,172 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">Shell</h4>
+                <h4 class="modal-title modaltxt">Shell Project</h4>
             </div>
             <div class="modal-body">
-                <p>Shell Project</p>
+                <p class="modaltxt">As part of my Computer Systems class, I created a fully functional Terminal Shell. My shell supports cd, pwd, and ls commands, as well as the redirection of input and output. </p>
+                <p class="modaltxt">Languages: C</p>
                 <img id="shell" src="Images/MyShell.png" />
-                <p class="text-warning"><small>Link to Github</small></p>
+                <a href="https://github.com/Rebecca-Qian/Computer-Systems/tree/master/p4shell" target="_blank"><p class="modaltxt">See the code</p></a>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal"><p class="modaltxt">Close</p></button>
             </div>
         </div>
     </div>
 </div>
+
+<div id="Modal3" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title modaltxt">LuminAID</h4>
+            </div>
+            <div class="modal-body">
+                <p class="modaltxt">During my Metcalf internship at LuminAID, I worked on many aspects of the website, including creating responsive page templates using Shopify's Liquid templating engine, coding Javascript snippets and tracking traffic using Google Analytics.</p>
+                <p class='modaltxt'>Languages: Liquid, Javascript, HTML/CSS</p>
+                <img id="LuminAID" src="Images/LuminAID.png" />
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal"><p class="modaltxt">Close</p></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="Modal4" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title modaltxt">Reversi</h4>
+            </div>
+            <div class="modal-body">
+                <p class="modaltxt">Reversi is an online board game for 2 players with black and white checkers. Reversi has a Human mode to be played by 2 people, and an AI mode with 2 difficulty levels, where the player can choose their difficulty level. This was my first coding project, and it was written in the functional programming language Racket.</p>
+                <p class="modaltxt">Languages: Racket</p>
+                <img id="Reversi" src="Images/Reversi.ico" />
+                <a href="https://github.com/Rebecca-Qian/Functional-Programming/tree/master/project" target="_blank"><p class="modaltxt">See the code</p></a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal"><p class="modaltxt">Close</p></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="Modal5" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title modaltxt">Ray Tracer</h4>
+            </div>
+            <div class="modal-body">
+                <p class="modaltxt">I created a Ray Tracing program that renders ppm image representations of 3D shapes, such as spheres and cubes. The Ray Tracer projects patterns onto shapes, scales images according to depth and shows intersecting objects.</p>
+                <p class="modaltxt">Languages: C</p>
+                <img id="rayTracer" src="Images/rayTracer.png" />
+                <a href="https://github.com/Rebecca-Qian/C-Programs/tree/master/projectC"><p class="modaltxt">See the code</p></a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal"><p class="modaltxt">Close</p></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="Modal6" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title modaltxt">Cache Simulation</h4>
+            </div>
+            <div class="modal-body">
+                <p class="modaltxt">I programmed a Cache Memory Simulator that tracks Cache hits, misses, cold misses and follows the LRU replacement policy. My implementation uses a linked list of two-dimensional arrays to simulate Cache memory blocks and sets. My Cache simulation passed the performance efficiency test with 100%.</p>
+                <p class="modaltxt">Languages: C</p>
+                <img id="cache" src="Images/Memory Management.jpg" />
+                <a href="https://github.com/Rebecca-Qian/Computer-Systems/tree/master/p3cache" target="_blank"><p class="modaltxt">See the code</p></a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal"><p class="modaltxt">Close</p></button>
+            </div>
+        </div>
+    </div>
+</div>
+
 </div>
 
       <div class="visible-lg row box">
-        <div class="visible-lg imgBoxlg col-lg-4"><a href="#myModal" role="button" class="btn btn-large btn-primary" data-toggle="modal">gURL</a></div>
-        <div class="visible-lg imgBoxlg col-lg-4"><a href="#Modal2" role="button" class="btn btn-large btn-primary" data-toggle="modal"><img id="shell" src="Images/MyShell.png" /></a></div>
-        <div class="visible-lg imgBoxlg col-lg-4"><img id="cache" src="Images/Memory Management.jpg" /></div>
+        <div class="visible-lg imgBoxlg col-lg-4"><a href="#myModal" role="button" class="btn btn-large btn-info modalbtn" data-toggle="modal"><p class="text-center projects">gURL</p></a></div>
+        <div class="visible-lg imgBoxlg col-lg-4"><a href="#Modal2" role="button" class="btn btn-large btn-default modalbtn" data-toggle="modal"><p class="text-center projects">Shell</p></a></div>
+        <div class="visible-lg imgBoxlg col-lg-4"><a href="#Modal6" role="button" class="btn btn-large btn-info modalbtn" data-toggle="modal"><p class="text-center projects">Cache</p></a></div>
       </div>
 
        <div class="visible-lg row box">
-        <div class="visible-lg imgBoxlg col-lg-4"><img id="LuminAID" src="Images/LuminAID.png" /></div>
-        <div class="visible-lg imgBoxlg col-lg-4"> <img id="Reversi" src="Images/Reversi.ico" /></div>
-        <div class="visible-lg imgBoxlg col-lg-4"><img id="rayTracer" src="Images/rayTracer.png" /></div>
+        <div class="visible-lg imgBoxlg col-lg-4"><a href="#Modal3" role="button" class="btn btn-large btn-default modalbtn" data-toggle="modal"><p class="text-center projects">LuminAID</p></a></div>
+        <div class="visible-lg imgBoxlg col-lg-4"> <a href="#Modal4" role="button" class="btn btn-large btn-info modalbtn" data-toggle="modal"><p class="text-center projects">Reversi</p></a></div>
+        <div class="visible-lg imgBoxlg col-lg-4"><a href="#Modal5" role="button" class="btn btn-large btn-default modalbtn" data-toggle="modal"><p class="text-center projects">Ray Tracer</p></a></div>
       </div>
 
       <div class="visible-md row box">
-        <div class="visible-md imgBoxmd col-md-4"><img id="gurlcode" src="Images/GurlCode.png" /></div>
-        <div class="visible-md imgBoxmd col-md-4"><img id="shell" src="Images/MyShell.png" /></div>
-        <div class="visible-md imgBoxmd col-md-4"><img id="cache" src="Images/Memory Management.jpg" /></div>
+        <div class="visible-md imgBoxmd col-md-4"><a href="#myModal" role="button" class="btn btn-large btn-info modalbtn" data-toggle="modal"><p class="text-center projectsmd">gURL</p></a></div>
+        <div class="visible-md imgBoxmd col-md-4"><a href="#Modal2" role="button" class="btn btn-large btn-default modalbtn" data-toggle="modal"><p class="text-center projectsmd">Shell</p></a></div>
+        <div class="visible-md imgBoxmd col-md-4"><a href="#Modal6" role="button" class="btn btn-large btn-info modalbtn" data-toggle="modal"><p class="text-center projectsmd">Cache</p></a></div>
       </div>
 
        <div class="visible-md row box">
-        <div class="visible-md imgBoxmd col-md-4"><img id="LuminAID" src="Images/LuminAID.png" /></div>
-        <div class="visible-md imgBoxmd col-md-4"><img id="Reversi" src="Images/Reversi.ico" /></div>
-        <div class="visible-md imgBoxmd col-md-4"><img id="rayTracer" src="Images/rayTracer.png" /></div>
+        <div class="visible-md imgBoxmd col-md-4"><a href="#Modal3" role="button" class="btn btn-large btn-default modalbtn" data-toggle="modal"><p class="text-center projectsmd">LuminAID</p></a></div>
+        <div class="visible-md imgBoxmd col-md-4"><a href="#Modal4" role="button" class="btn btn-large btn-info modalbtn" data-toggle="modal"><p class="text-center projectsmd">Reversi</p></a></div>
+        <div class="visible-md imgBoxmd col-md-4"><a href="#Modal5" role="button" class="btn btn-large btn-default modalbtn" data-toggle="modal"><p class="text-center projectsmd">Ray Tracer</p></a></div>
       </div>
 
       <div class="visible-sm row box">
-        <div class="visible-sm imgBoxsm col-sm-6"><img id="gurlcode" src="Images/GurlCode.png" /></div>
-        <div class="visible-sm imgBoxsm col-sm-6"><img id="shell" src="Images/MyShell.png" /></div>
+        <div class="visible-sm imgBoxsm col-sm-6"><a href="#myModal" role="button" class="btn btn-large btn-default modalbtn" data-toggle="modal"><p class="text-center projectssm">gURL</p></a></div>
+        <div class="visible-sm imgBoxsm col-sm-6"><a href="#Modal2" role="button" class="btn btn-large btn-info modalbtn" data-toggle="modal"><p class="text-center projectssm">Shell</p></a></div>
       </div>
 
        <div class="visible-sm row box">
-        <div class="visible-sm imgBoxsm col-sm-6"><img id="cache" src="Images/Memory Management.jpg" /></div>
-        <div class="visible-sm imgBoxsm col-sm-6"><img id="LuminAID" src="Images/LuminAID.png" /></div>
+        <div class="visible-sm imgBoxsm col-sm-6"><a href="#Modal6" role="button" class="btn btn-large btn-info modalbtn" data-toggle="modal"><p class="text-center projectssm">Cache</p></a></div>
+        <div class="visible-sm imgBoxsm col-sm-6"><a href="#Modal3" role="button" class="btn btn-large btn-default modalbtn" data-toggle="modal"><p class="text-center projectssm">LuminAID</p></a></div>
       </div>
 
       <div class="visible-sm row box">
-        <div class="visible-sm imgBoxsm col-sm-6"><img id="Reversi" src="Images/Reversi.ico" /></div>
-        <div class="visible-sm imgBoxsm col-sm-6"><img id="rayTracer" src="Images/rayTracer.png" /></div>
+        <div class="visible-sm imgBoxsm col-sm-6"><a href="#Modal4" role="button" class="btn btn-large btn-default modalbtn" data-toggle="modal"><p class="text-center projectssm">Reversi</p></a></div>
+        <div class="visible-sm imgBoxsm col-sm-6"><a href="#Modal5" role="button" class="btn btn-large btn-info modalbtn" data-toggle="modal"><p class="text-center projectssm">Ray Tracer</p></a></div>
       </div>
 
       <div class="visible-xs row box">
-        <div class="visible-xs imgBoxxs col-xs-6"><img id="gurlcode" src="Images/GurlCode.png" /></div>
-        <div class="visible-xs imgBoxxs col-xs-6"><img id="shell" src="Images/MyShell.png" /></div>
+        <div class="visible-xs imgBoxxs col-xs-6"><a href="#myModal" role="button" class="btn btn-large btn-default modalbtn" data-toggle="modal"><p class="text-center projectsxs">gURL</p></a></div>
+        <div class="visible-xs imgBoxxs col-xs-6"><a href="#Modal2" role="button" class="btn btn-large btn-info modalbtn" data-toggle="modal"><p class="text-center projectsxs">Shell</p></a></div>
       </div>
 
        <div class="visible-xs row box">
-        <div class="visible-xs imgBoxxs col-xs-6"><img id="cache" src="Images/Memory Management.jpg" /></div>
-        <div class="visible-xs imgBoxxs col-xs-6"><img id="LuminAID" src="Images/LuminAID.png" /></div>
+        <div class="visible-xs imgBoxxs col-xs-6"><a href="#Modal6" role="button" class="btn btn-large btn-info modalbtn" data-toggle="modal"><p class="text-center projectsxs">Cache</p></a></div>
+        <div class="visible-xs imgBoxxs col-xs-6"><a href="#Modal3" role="button" class="btn btn-large btn-default modalbtn" data-toggle="modal"><p class="text-center projectsxs">LuminAID</p></a></div>
       </div>
 
        <div class="visible-xs row box">
-        <div class="visible-xs imgBoxxs col-xs-6"><img id="Reversi" src="Images/Reversi.ico" /></div>
-        <div class="visible-xs imgBoxxs col-xs-6"><img id="rayTracer" src="Images/rayTracer.png" /></div>
+        <div class="visible-xs imgBoxxs col-xs-6"><a href="#Modal4" role="button" class="btn btn-large btn-default modalbtn" data-toggle="modal"><p class="text-center projectsxs">Reversi</p></a></div>
+        <div class="visible-xs imgBoxxs col-xs-6"><a href="#Modal5" role="button" class="btn btn-large btn-info modalbtn" data-toggle="modal"><p class="text-center projectsxs">Ray Tracer</p></a></div>
       </div>
 
     </div>
     
 
     <div class="section">
-      <div class="row">
-        <h3 class="text-center"> Other Projects </h3>
+      <div class="row box">
+        <h3 class="text-center"><u>Other Projects </u></h3>
+        <br />
+
+        <h3 class="text-center"> I have also worked in <span class="emphasize">Product Management</span> and <span class="emphasize">Marketing</span> roles at startups and tech companies in the U.S. and China.
+        <br />
+         <br />
+        On campus, I am a <a href="http://moneythink.org/" target="_blank" class="emphasize">Moneythink</a> Mentor, a Women in Business Associate and I have served as the Director of Outreach for <a href="http://chinacare.uchicago.edu/projects.htm" target="_blank">China Care</a>.
+         <br />
+          <br />
+
+        Currently, I'm planning <span class="emphasize">Sensasia</span>, UChicago's first ever large-scale East Asian Cultural Show. I'm also creating an app with some friends! </h3> 
       </div>
     </div>
     <div class="section">
