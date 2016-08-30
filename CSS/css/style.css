@@ -155,3 +155,15 @@ h3 {
 	/*margin-right: 40%;*/
 	/*margin-top: -10px;*/
 }
+
+#myModal {
+	position: relative;
+	z-index: 100;
+	css3: false;
+}
+
+.modal, .modal-body, .modal-dialog, .modal-header, .fade, .modal-footer {
+	position: relative;
+	z-index: 100;
+	css3: false;
+}

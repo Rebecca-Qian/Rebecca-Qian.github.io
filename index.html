@@ -7,7 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Rebecca Qian</title>
 
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
     <link href="CSS/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/css/bootstrap-theme.min.css">
+   
     <link href="CSS/css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
      <link href="JS/jquery.fullPage.css" type="text/css" rel="stylesheet">
@@ -44,9 +48,53 @@
       <div class="row">
         <h3 class="text-center"> Technical Projects </h3>
       </div>
+<div class="row">
+<!-- Button HTML (to Trigger Modal) -->
+
+ 
+<!-- Modal HTML -->
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">GURL</h4>
+            </div>
+            <div class="modal-body">
+                <p>gURL is a customizable, imaginative resource generator to inspire girls about technology.</p>
+                <img id="gurlcode" src="Images/GurlCode.png" />
+                <p class="text-warning"><small>Link to Github</small></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="Modal2" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Shell</h4>
+            </div>
+            <div class="modal-body">
+                <p>Shell Project</p>
+                <img id="shell" src="Images/MyShell.png" />
+                <p class="text-warning"><small>Link to Github</small></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
       <div class="visible-lg row box">
-        <div class="visible-lg imgBoxlg col-lg-4"><img id="gurlcode" src="Images/GurlCode.png" /></div>
-        <div class="visible-lg imgBoxlg col-lg-4"><img id="shell" src="Images/MyShell.png" /></div>
+        <div class="visible-lg imgBoxlg col-lg-4"><a href="#myModal" role="button" class="btn btn-large btn-primary" data-toggle="modal">gURL</a></div>
+        <div class="visible-lg imgBoxlg col-lg-4"><a href="#Modal2" role="button" class="btn btn-large btn-primary" data-toggle="modal"><img id="shell" src="Images/MyShell.png" /></a></div>
         <div class="visible-lg imgBoxlg col-lg-4"><img id="cache" src="Images/Memory Management.jpg" /></div>
       </div>
 
@@ -128,20 +176,19 @@
 </div>
 </div>
     
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="CSS/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="JS/jquery.fullPage.min.js"></script>
     <!-- script src="JS/jquery-3.0.0.min.js"></script -->
     <!-- script src="JS/animations.js"></script-->
+
      <script type="text/javascript">
         $(document).ready(function() {
             $('#fullpage').fullpage( {
-              css3: true,
-              navigation: true,
+              css3: false,
+              navigation: false,
               navigationPosition: 'right',
-              keyboardScrolling: true
+              keyboardScrolling: false
             });
         });
     </script>
